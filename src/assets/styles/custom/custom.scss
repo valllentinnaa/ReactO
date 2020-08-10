@@ -1,0 +1,15 @@
+@import "./components/movies";
+@import "./components/login";
+@import "./components/form";
+@import "./components/general";
+
+
+.remove-list-item {
+    cursor: pointer;
+}
+.favorite-movie {
+    cursor: pointer;
+    &.active {
+        color: theme-color("action");
+    }
+}

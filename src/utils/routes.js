@@ -32,6 +32,13 @@ const routes = [
         main: () => <Login/>
     },
     {
+        path: '/demo',
+        exact: true,
+        main: () => <Layout>
+            <Dashboard/>
+        </Layout>
+    },
+    {
         path: '/articles',
         exact: true,
         main: () => <Layout>
