@@ -1,9 +1,10 @@
+import React from "react";
+
 import Login from '../pages/Login';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SideNavigation from "../components/SideNavigation";
-
-import React from "react";
+import Register from "../pages/Register";
 import Articles from "../pages/Articles";
 import Places from "../pages/Places";
 import CreateArticle from "../pages/CreateArticle";
@@ -30,6 +31,10 @@ const routes = [
     {
         path: '/',
         main: () => <Login/>
+    },
+    {
+        path: '/register',
+        main: () => <Register/>
     },
     {
         path: '/demo',

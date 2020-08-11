@@ -1,9 +1,8 @@
 import React from "react";
 import {Form, FormGroup, Label, Input, Button} from "reactstrap";
 import actionLogo from "../assets/images/reacto-transparent.png";
-import {Link} from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
     return (
         <div className="login">
             <div className="login-container">
@@ -12,7 +11,7 @@ const Login = () => {
                 </div>
                 <div className="login-form">
                     <div className="login-form-header">
-                        <h2>Login</h2>
+                        <h2>Register</h2>
                     </div>
                     <div className="login-form-body">
                         <Form>
@@ -31,21 +30,22 @@ const Login = () => {
                                        id="loginPassword"
                                        className="custom-rounded"/>
                             </FormGroup>
+                            <FormGroup>
+                                <Label for="rePassword">Re - Password</Label>
+                                <Input type="password"
+                                       name="rePassword"
+                                       id="rePassword"
+                                       className="custom-rounded"/>
+                            </FormGroup>
                             <FormGroup className="pt-3">
                                 <Button color="action" className="text-light btn-block custom-rounded">Go!</Button>
                             </FormGroup>
                         </Form>
                     </div>
                 </div>
-                <div className="login-footer">
-                    <Link exact to="/demo">
-                        <u>...or CHECK THE DEMO AND REGISTER</u>
-                        <i className="fa fa-arrow-right ml-3"></i>
-                    </Link>
-                </div>
             </div>
         </div>
     );
 };
 
-export default Login;
+export default Register;
