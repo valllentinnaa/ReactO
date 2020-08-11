@@ -17,7 +17,7 @@ const store = createStore(reducers, applyMiddleware(thunk));
 const getRoutes = () => {
     return routes.map((route, index) => {
         return <Route
-            exact={route.exact}
+            exact
             key={index}
             path={route.path}>
             {route.main}

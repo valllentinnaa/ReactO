@@ -38,4 +38,36 @@ export default {
             failure,
         });
     },
+    request: (options = {}) => {
+        if (!options.url) {
+            console.log('URL is required');
+            return;
+        }
+
+        const data = Object.assign({
+            method: 'get',
+            baseURL: constants.baseURL,
+        }, options);
+
+        return new Promise((resolve, reject) => {
+
+            axios(data)
+                .then((response) => {
+                    if (options.success) {
+                        options.success(response.data);
+
+                    }
+                    resolve(response.data);
+                })
+
+                .catch((error) => {
+                    if (options.failure) {
+                        options.failure(error);
+                    }
+                    reject(error);
+                });
+
+        })
+
+    },
 };

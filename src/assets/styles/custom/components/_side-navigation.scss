@@ -1,0 +1,33 @@
+.side-navigation {
+  min-height: 100vh;
+  background-color: theme-color("primary-dark");
+}
+
+.side-navigation-body {
+  padding: 1rem;
+}
+
+.side-navigation-item {
+  color: theme-color("secondary");
+  a {
+    color: theme-color("secondary");
+    padding-bottom: .275rem;
+
+    &:active, &:hover, &:focus {
+      color: theme-color("action");
+    }
+  }
+  &:active, &:hover, &:focus {
+    color: theme-color("action");
+  }
+}
+
+.side-navigation-item__active {
+  a {
+    color: theme-color("action");
+  }
+}
+
+.side-navigation-sub-item {
+  padding-left: .5rem ;
+}

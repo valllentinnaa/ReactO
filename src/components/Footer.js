@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="footer">Software University 2020 &reg; ReactO: A React.js App</div>
     );
 };
 

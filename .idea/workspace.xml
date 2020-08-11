@@ -2,20 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f1f5f7-5dc3-4aca-8e4d-02a8dc7dae62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/bootstrap-components/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/bootstrap-components/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_general.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_movies.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_article.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_side-navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ModifyForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Contacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/DemoDashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/EditArticle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/custom/components/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/custom/components/_general.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/custom/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/custom/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network/network-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/network-client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PricePlans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PricePlans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../x4-casemgmt-replica" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597007303289</updated>
-      <workItem from="1597007304399" duration="10935000" />
+      <workItem from="1597007304399" duration="32944000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <created>1597061337073</created>
@@ -92,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597061337073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login Page UI">
+      <created>1597087096015</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597087096015</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,17 +121,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup" />
+    <MESSAGE value="Login Page UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Page UI" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="380" y="8" key="CommitChangelistDialog2" timestamp="1597061336217">
+    <state x="380" y="8" key="CommitChangelistDialog2" timestamp="1597087095045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="380" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1597087095045" />
     <state x="380" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2048.1112@0.0.1536.824" timestamp="1597061336217" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1597040399057">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1597177731591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1597009829243" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1597177731591" />
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.2048.1112@0.0.1536.824" timestamp="1597040399057" />
+    <state x="524" y="124" key="RollbackChangesDialog" timestamp="1597170191519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="124" key="RollbackChangesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1597170191519" />
+    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1597177893495">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1597177893495" />
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597171971108" />
   </component>
 </project>

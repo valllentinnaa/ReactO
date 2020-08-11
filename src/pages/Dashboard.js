@@ -1,8 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
+import DemoDashboard from "./DemoDashboard";
+import LoginDashboard from "./LoginDashboard";
 
 const Dashboard = () => {
+    const [isLogged, setIsLogged] = useState(false);
     return (
-        <div>Dashboard</div>
+        <>
+            {
+                isLogged ? <LoginDashboard/> : <DemoDashboard/>
+            }
+            </>
     );
 };
 
