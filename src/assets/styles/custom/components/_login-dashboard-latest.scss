@@ -1,0 +1,16 @@
+.latest-item {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.latest-item-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: theme-color("action");
+  }
+}

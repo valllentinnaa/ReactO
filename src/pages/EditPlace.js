@@ -1,13 +1,13 @@
 import React from "react";
-import ArticleModifyForm from "../components/ArticleModifyForm";
+import PlaceModifyForm from "../components/PlaceModifyForm";
 import Container from "../components/Container";
 
-const EditArticle = () => {
+const EditPlace = () => {
     return (
         <Container title="Edit Article">
-            <ArticleModifyForm/>
+            <PlaceModifyForm/>
         </Container>
     );
 };
 
-export default EditArticle;
+export default EditPlace;

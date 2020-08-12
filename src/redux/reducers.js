@@ -14,6 +14,16 @@ function articles(state = [], action) {
     }
 }
 
+function places(state = [], action) {
+    switch (action.type) {
+        case types.SET_PLACES: {
+            return [...action.payload];
+        }
+        default:
+            return state;
+    }
+}
+
 function article(state = {}, action) {
     switch (action.type) {
         case types.SET_ARTICLE: {
@@ -27,5 +37,6 @@ function article(state = {}, action) {
 
 export default combineReducers({
     articles,
-    article
+    article,
+    places
 });

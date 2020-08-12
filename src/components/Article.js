@@ -8,6 +8,7 @@ import * as actions from "../redux/actions";
 class Article extends Component  {
   goToEditPage = () => {
       this.props.history.push(`/articles/${this.props.id}`);
+      console.log(this.props);
   };
 
     deleteArticle = () => {
@@ -19,9 +20,9 @@ class Article extends Component  {
           <div className="row">
               <div className="col-12">
                   <div className="box box-shadow">
-                      <div className="article-header">
+                      <div className="box-header">
                           <h5>{this.props.title || 'Title'}</h5>
-                          <div className="article-actions">
+                          <div className="box-actions">
                               <Button
                                   size="sm"
                                   color="secondary"

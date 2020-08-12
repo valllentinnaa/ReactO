@@ -2,18 +2,34 @@ import types from './action-types';
 import networkClient from '../network/network-client';
 import constants from "../utils/constants";
 
-export function setArticles (articles) {
-    return {type: types.SET_ARTICLES, payload: articles}
-}
+
 export function setError (error) {
     return { type: types.SET_ERROR, payload: error };
-}
+};
+
+export function setArticles (articles) {
+    return {type: types.SET_ARTICLES, payload: articles}
+};
 
 export const getArticles = () => async dispatch => {
     try {
         const res = await networkClient.get(
             `${constants.baseURL}/api/articles/all`);
         dispatch(setArticles(res.articles));
+    } catch(ex) {
+        dispatch(setError({message: 'There was an error!'}))
+    }
+};
+
+export function setPlaces (places) {
+    return {type: types.SET_PLACES, payload: places}
+};
+
+export const getPlaces = () => async dispatch => {
+    try {
+        const res = await networkClient.get(
+            `${constants.baseURL}/api/places/all`);
+        dispatch(setPlaces(res.places));
     } catch(ex) {
         dispatch(setError({message: 'There was an error!'}))
     }

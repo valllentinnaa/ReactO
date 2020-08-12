@@ -7,10 +7,10 @@ import { bindActionCreators } from "redux";
 import * as actions from "../redux/actions";
 
 
-class ModifyForm extends Component{
+class PlaceModifyForm extends Component{
     componentDidMount = () => {
-        const articleId = this.props.match.params.id;
-        this.props.getArticle(articleId);
+        const placeId = this.props.match.params.id;
+        this.props.getArticle(placeId);
     };
     render() {
         return (
@@ -35,16 +35,16 @@ class ModifyForm extends Component{
 
 const mapStateToProps = state => {
     return {
-        article: state.article,
+        places: state.article,
     }
 };
 
 const mapStateToDispatch = dispatch => {
     return bindActionCreators({
-        getArticle: actions.getArticle,
-        setArticle: actions.setArticle,
+        getPlaces: actions.getPlaces,
+        setPlaces: actions.setPlaces,
     }, dispatch)
 };
 
 export default connect(mapStateToProps, mapStateToDispatch)
-(withRouter(ModifyForm));
+(withRouter(PlaceModifyForm));
