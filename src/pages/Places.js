@@ -4,10 +4,10 @@ import * as actions from "../redux/actions";
 import {connect} from "react-redux";
 import Container from "../components/Container";
 import Place from "../components/Place";
-import {Alert, Row, Spinner} from "reactstrap";
+import {Alert, Row} from "reactstrap";
+import ReactoSpinner from "../components/ReactoSpinner";
 
 const Places = ({places, getPlaces}) => {
-    console.log(places);
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -36,9 +36,7 @@ const Places = ({places, getPlaces}) => {
                 return <Alert color="light">No articles found.</Alert>
             }
         } else {
-            return <div className="spinner-container">
-                <Spinner color="secondary"/>
-            </div>
+            return <ReactoSpinner/>
         }
     };
     return (

@@ -3,8 +3,9 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as actions from "../redux/actions";
 import Article from "../components/Article";
-import {Alert, Spinner} from 'reactstrap';
+import {Alert} from 'reactstrap';
 import Container from "../components/Container";
+import ReactoSpinner from "../components/ReactoSpinner";
 
 const Articles = ({articles, getArticles}) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -34,9 +35,7 @@ const Articles = ({articles, getArticles}) => {
                 return <Alert color="light">No articles found.</Alert>
             }
         } else {
-            return <div className="spinner-container">
-                <Spinner color="secondary"/>
-            </div>
+            return <ReactoSpinner/>
         }
     };
 
