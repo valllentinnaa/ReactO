@@ -14,7 +14,7 @@ class ArticleModifyForm extends Component{
     };
     render() {
         return (
-            <Form>
+            <Form className="px-5">
                 <FormGroup>
                     <Label for="name">Title</Label>
                     <Input type="text" name="name" id="name" placeholder={this.props.article.name ? this.props.article.name : ''} />

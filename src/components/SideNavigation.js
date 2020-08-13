@@ -34,7 +34,7 @@ const SideNavigation = () => {
                     </div>
                     <div className="side-navigation-item side-navigation-sub-item">
                         <i className="fa fa-arrow-right ml-3"></i>
-                        <Link tag={RRNavLink} exact to="/articles/create">Create New Article</Link>
+                        <Link tag={RRNavLink} exact to="/articles/new">Create New Article</Link>
                     </div>
                 </>
                 }
