@@ -52,7 +52,19 @@ export const getArticle = id => async dispatch => {
     try {
         const response = await networkClient.get(
             `api/articles/${id}`);
-        dispatch(setArticle(response));
+        dispatch(getArticles(response));
+    } catch(ex) {
+        dispatch(setError({message: 'There was an error!'}))
+    }
+};
+
+export const addArticle = data => async dispatch => {
+    debugger
+    try {
+        debugger
+        const response = await networkClient.post(
+            `api/articles/new`, data);
+        dispatch(getArticles(response));
     } catch(ex) {
         dispatch(setError({message: 'There was an error!'}))
     }

@@ -9,6 +9,9 @@ function articles(state = [], action) {
         case types.REMOVE_ARTICLE: {
             return [...action.payload];
         }
+        case types.ADD_ARTICLE: {
+            return [...action.payload];
+        }
         default:
             return state;
     }
