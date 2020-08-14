@@ -38,3 +38,10 @@
     width: 100%;
   }
 }
+
+.card-label {
+  margin: 0 0.75rem 0 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-weight: 500;
+}

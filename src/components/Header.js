@@ -3,7 +3,8 @@ import {
     Navbar,
     Nav,
     NavLink,
-    NavbarBrand
+    NavbarBrand,
+    Button
 } from "reactstrap";
 import avatar from "../assets/images/avatar.svg";
 import actionLogo from "../assets/images/reacto-transparent.png";
@@ -20,7 +21,9 @@ const Header = () => {
                 <Nav className="ml-auto" navbar>
                   <NavItem>
                       <NavLink tag={RRNavLink}
-                               exact to="/register">Register</NavLink>
+                               exact to="/plans">
+                          <Button size="sm" outline color="action" className="pulsing-button">Buy your ReactO</Button>
+                      </NavLink>
                   </NavItem>
                     <NavItem className="header-item avatar">
                         <img src={avatar} alt="User Profile"/>

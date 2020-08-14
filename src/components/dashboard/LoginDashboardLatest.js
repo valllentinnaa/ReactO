@@ -35,8 +35,8 @@ const Latest = ({articles, places, isLoaded}) => {
                             {
                                 articles.length ? <>
                                     <div>{articles.length} total articles</div>
-                                    <div className="text-secondary text-truncate">Most recents with themes such
-                                        as {articlesTitles.join(", ")}</div>
+                                    <div className="text-secondary">Most recents with themes such
+                                        as {articlesTitles.join(", ")}.</div>
                                 </> : <div>No articles!</div>
                             }
                         </div>
@@ -52,8 +52,8 @@ const Latest = ({articles, places, isLoaded}) => {
                         <div> {
                             places.length ? <>
                                 <div>{places.length} places in total</div>
-                                <div className="text-secondary text-truncate">Most recents
-                                    are {placesTitles.join(", ")}</div>
+                                <div className="text-secondary">Most recents
+                                    are {placesTitles.join(", ")}.</div>
                             </> : <div>No places!</div>
                         }
                         </div>
