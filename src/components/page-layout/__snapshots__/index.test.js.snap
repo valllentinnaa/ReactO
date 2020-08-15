@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLayout Component should render pagelayout component 1`] = `
+Array [
+  <Header />,
+  <div
+    className="body-container"
+  >
+    <SideNavigation />
+  </div>,
+  <Footer />,
+]
+`;

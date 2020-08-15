@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Component should render authenticated routes 1`] = `
+<div
+  className="side-navigation"
+>
+  <div
+    className="side-navigation-body"
+  >
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Dashboard"
+    >
+      <a
+        exact={true}
+        href="/dashboard"
+        onClick={[Function]}
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Articles"
+    >
+      <a
+        exact={true}
+        href="/articles"
+        onClick={[Function]}
+      >
+        Articles
+      </a>
+    </div>
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Add your article"
+    >
+      <a
+        exact={true}
+        href="/articles/new"
+        onClick={[Function]}
+      >
+        Add your article
+      </a>
+    </div>
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Profile"
+    >
+      <a
+        exact={true}
+        href="/profile/123"
+        onClick={[Function]}
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navigation Component should render non-authenticated routes 1`] = `
+<div
+  className="side-navigation"
+>
+  <div
+    className="side-navigation-body"
+  >
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Dashboard"
+    >
+      <a
+        exact={true}
+        href="/dashboard"
+        onClick={[Function]}
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      className="side-navigation-item"
+      data-test-id="link-Price Plans"
+    >
+      <a
+        exact={true}
+        href="/plans"
+        onClick={[Function]}
+      >
+        Price Plans
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,39 +1,41 @@
-import React from 'react';
-import routes from "./utils/routes";
+import React, { useState, useEffect } from 'react'
+import UserContext from './Context'
+import getCookie from './utils/cookie'
 
-import { createStore, applyMiddleware } from "redux";
-import { Provider } from "react-redux";
-import reducers from "./redux/reducers";
-import thunk from 'redux-thunk';
+const App = (props) => {
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
-
-const store = createStore(reducers, applyMiddleware(thunk));
-
-const getRoutes = () => {
-    return routes.map((route, index) => {
-        return <Route
-            exact
-            key={index}
-            path={route.path}>
-            {route.main}
-        </Route>
+  const [user, setUser] = useState(props.user ? {
+    ...props.user,
+    loggedIn: true
+  } : null);
+  const articles = props.articles || [];
+  
+  const logIn = (userObject) => {
+    setUser({
+      ...userObject,
+      loggedIn: true
     })
+  };
+
+  const logOut = () => {
+    document.cookie = "x-auth-token= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+    setUser({
+      loggedIn: false
+    })
+  };
+  
+  console.log('user', user);
+
+  return (
+    <UserContext.Provider value={{
+      user,
+      logIn,
+      logOut,
+      articles
+    }}>
+      {props.children}
+    </UserContext.Provider>
+  )
 };
 
-
-function App() {
-    return <Provider store={store}>
-        <Router>
-            <Switch>
-                {getRoutes()}
-            </Switch>
-        </Router>
-    </Provider>
-}
-
-export default App;
+export default App

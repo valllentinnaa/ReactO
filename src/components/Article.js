@@ -1,18 +1,26 @@
-import React, {Component} from "react";
+import React, {useState, Component} from "react";
 import {Button} from 'reactstrap';
+import getCookie from "../utils/cookie";
 import {withRouter} from 'react-router-dom';
-import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
-import * as actions from "../redux/actions";
 
 class Article extends Component  {
   goToEditPage = () => {
       this.props.history.push(`/articles/${this.props.id}`);
-      console.log(this.props);
   };
 
-    deleteArticle = () => {
-        this.props.removeArticle(this.props.id);
+    deleteArticle = async () => {
+        await fetch(`http://localhost:9999/api/articles?id=${this.props.id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': getCookie('x-auth-token')
+            }
+        }).then(res => {
+            alert('Article deleted!');
+        }).catch(err => {
+            console.log(err);
+            alert('Something went wrong!');
+        });
     };
 
   render() {
@@ -57,16 +65,4 @@ class Article extends Component  {
   }
 }
 
-const mapStateToProps = state => {
-    return {
-        articles: state.articles
-    }
-};
-
-const mapStateToDispatch = dispatch => {
-    return bindActionCreators({
-        removeArticle: actions.removeArticle
-    }, dispatch)
-};
-
-export default connect(mapStateToProps, mapStateToDispatch)(withRouter(Article));
+export default withRouter(Article);
