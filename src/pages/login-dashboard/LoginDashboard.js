@@ -27,7 +27,7 @@ const LoginDashboard = (props) => {
                             <CardImg top width="100%" src={article.imageUrl} alt="Card image cap"/>
                             <CardBody>
                                 <CardTitle>{article.name}</CardTitle>
-                                <CardText>{article.description}</CardText>
+                                <CardText className="text-truncate">{article.description}</CardText>
                             </CardBody>
                         </Card>
                     </Col>
