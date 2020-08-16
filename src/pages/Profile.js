@@ -54,7 +54,7 @@ const Profile = () => {
                         <Card>
                             <CardBody>
                                 <CardTitle>User: {username}</CardTitle>
-                                <CardText>Posts: {posts}</CardText>
+                                <CardText>Articles: {posts}</CardText>
 
                                 <Button color="secondary" className="text-white" onClick={logOut}>Logout</Button>
                             </CardBody>
