@@ -22,7 +22,7 @@ class Header extends Component {
             user
         } = this.context;
 
-        const path = user ? 'profile' : 'login';
+        const path = user ? `profile/${user.id}` : 'login';
 
         return (
             <div>
@@ -38,9 +38,9 @@ class Header extends Component {
                                     ReactO</Button>
                             </NavLink>
                         </NavItem>}
-                        <NavItem className="header-item avatar" id="profileButton">
+                        <NavItem className="header-item avatar">
                             <NavLink tag={RRNavLink}
-                                     exact to={`/${path}/${user.id}`}>
+                                     exact to={`/${path}`}>
                                 <img src={avatar} alt="User Profile"/>
                             </NavLink>
                         </NavItem>

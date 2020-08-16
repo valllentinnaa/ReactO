@@ -22,13 +22,14 @@ const getNavigation = (user) => {
   const guestLinks = [
     {
       title: "Dashboard",
-      link: "/dashboard"
+      link: "/demo"
     },
     {
       title: "Price Plans",
       link: "/plans"
     }
   ];
+
   const loggedIn = user && user.loggedIn;
   return loggedIn ? authLinks : guestLinks;
 };

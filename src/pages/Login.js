@@ -77,7 +77,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div className="login-footer">
-                            <Link exact to="/dashboard">
+                            <Link exact to="/demo">
                                 <u>...or CHECK THE DEMO AND REGISTER</u>
                                 <i className="fa fa-arrow-right ml-3"></i>
                             </Link>

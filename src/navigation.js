@@ -27,6 +27,7 @@ const Navigation = () => {
             <Route path="/dashboard" exact>
                 {loggedIn ? (<LoginDashboard/>) : (<DemoDashboard/>)}
             </Route>
+            <Route path="/demo" exact component={DemoDashboard}/>
             <Route path="/articles/new">
                 {loggedIn ? (<AddArticle/>) : (<Redirect to="/login"/>)}
             </Route>

@@ -13,6 +13,7 @@ class SideNavigation extends Component {
         } = this.context;
 
         const links = getNavigation(user);
+
         return (
             <div className="side-navigation">
                 <div className="side-navigation-body">
